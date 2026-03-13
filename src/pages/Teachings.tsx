@@ -4,9 +4,6 @@ import { Search } from 'lucide-react'
 import SermonCard from '@/components/SermonCard'
 import { sermons, type SermonCategory } from '@/data/sermons'
 
-interface TeachingsProps {
-  onPlaySermon: (title: string, subtitle: string) => void
-}
 
 const categories: ('All' | SermonCategory)[] = [
   'All',
@@ -20,7 +17,7 @@ const categories: ('All' | SermonCategory)[] = [
 
 const SERMONS_PER_PAGE = 6
 
-export default function Teachings({ onPlaySermon }: TeachingsProps) {
+export default function Teachings() {
   const [search, setSearch] = useState('')
   const [activeCategory, setActiveCategory] = useState<'All' | SermonCategory>('All')
   const [page, setPage] = useState(1)
@@ -126,7 +123,7 @@ export default function Teachings({ onPlaySermon }: TeachingsProps) {
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {paginated.map((sermon, i) => (
-                <SermonCard key={sermon.id} sermon={sermon} onPlay={onPlaySermon} index={i} />
+                <SermonCard key={sermon.id} sermon={sermon} index={i} />
               ))}
             </div>
           )}

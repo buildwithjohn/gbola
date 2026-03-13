@@ -8,62 +8,61 @@ export interface Sermon {
   duration: string
   excerpt: string
   scripture: string
+  youtubeId: string   // Real YouTube video ID — the actual content
 }
 
+// These 5 sermons are backed by real YouTube videos from @gbola_oladosu
+// Title/category/scripture are descriptive labels — the real content is the YouTube embed
 export const sermons: Sermon[] = [
   {
     id: '1',
-    title: 'The Prayer Life That Commands Heaven',
+    title: 'Teaching 1',
     category: 'Prayer',
-    date: 'February 12, 2025',
-    duration: '52 min',
-    excerpt: 'Discover the kind of prayer that does not just knock on heaven\'s door — it lays hold of the promises of God and refuses to let go until they manifest in the earth.',
+    date: '2025',
+    duration: 'Full Message',
+    excerpt: 'A powerful teaching from Rev. Adegbola Oladosu. Click Watch to view the full message on YouTube.',
     scripture: 'Matthew 18:18',
+    youtubeId: 'HSY6mnleBSk',
   },
   {
     id: '2',
-    title: 'Flowing with the Holy Spirit',
+    title: 'Teaching 2',
     category: 'Holy Spirit',
-    date: 'January 28, 2025',
-    duration: '47 min',
-    excerpt: 'The Holy Spirit is not a force — He is a Person. Learn to recognize His voice, yield to His promptings, and walk in perfect step with the Third Person of the Trinity.',
+    date: '2025',
+    duration: 'Full Message',
+    excerpt: 'A powerful teaching from Rev. Adegbola Oladosu. Click Watch to view the full message on YouTube.',
     scripture: 'John 16:13',
+    youtubeId: 'dpLajwi2nMs',
   },
   {
     id: '3',
-    title: 'The Secret Place: Encountering God in Intimacy',
+    title: 'Teaching 3',
     category: 'Intimacy with God',
-    date: 'December 8, 2024',
-    duration: '61 min',
-    excerpt: 'Psalm 91 promises a dwelling in the shadow of the Almighty. This message opens the door to that habitation — where God speaks clearly and you hear with precision.',
+    date: '2024',
+    duration: 'Full Message',
+    excerpt: 'A powerful teaching from Rev. Adegbola Oladosu. Click Watch to view the full message on YouTube.',
     scripture: 'Psalm 91:1',
+    youtubeId: 'cAlknNe1oiM',
   },
   {
     id: '4',
-    title: 'Faith That Does Not Waver',
+    title: 'Teaching 4',
     category: 'Faith',
-    date: 'November 15, 2024',
-    duration: '44 min',
-    excerpt: 'Abraham\'s faith did not stagger at the promise of God. This teaching unpacks the anatomy of unwavering faith and how every believer can build and operate in it.',
+    date: '2024',
+    duration: 'Full Message',
+    excerpt: 'A powerful teaching from Rev. Adegbola Oladosu. Click Watch to view the full message on YouTube.',
     scripture: 'Romans 4:20',
+    youtubeId: '6t7YH4TnHIc',
   },
   {
     id: '5',
-    title: 'Raised Up: Understanding Spiritual Authority',
+    title: 'Teaching 5',
     category: 'Leadership',
-    date: 'October 20, 2024',
-    duration: '58 min',
-    excerpt: 'God raises up men and women for Kingdom purpose. Learn what spiritual authority truly is, where it comes from, and how to walk in it for the glory of God.',
+    date: '2024',
+    duration: 'Full Message',
+    excerpt: 'A powerful teaching from Rev. Adegbola Oladosu. Click Watch to view the full message on YouTube.',
     scripture: 'Luke 10:19',
-  },
-  {
-    id: '6',
-    title: 'The Word at Work: Meditating on Scripture',
-    category: 'The Word',
-    date: 'September 5, 2024',
-    duration: '49 min',
-    excerpt: 'Joshua 1:8 commands meditation — not as religious routine, but as the gateway to supernatural success. Discover how to let the living Word of God work mightily in you.',
-    scripture: 'Joshua 1:8',
+    youtubeId: 'i7sSAp1R9mE',
   },
 ]
 

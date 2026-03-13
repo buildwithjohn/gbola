@@ -19,9 +19,6 @@ import coupleImg from '@/assets/couple.jpg'
 import portraitImg from '@/assets/portrait.jpg'
 
 
-interface HomeProps {
-  onPlaySermon: (title: string, subtitle: string) => void
-}
 
 const focusPillars = [
   {
@@ -46,7 +43,7 @@ const focusPillars = [
   },
 ]
 
-export default function Home({ onPlaySermon }: HomeProps) {
+export default function Home() {
   return (
     <>
       {/* Hero */}
@@ -204,7 +201,7 @@ export default function Home({ onPlaySermon }: HomeProps) {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {sermons.slice(0, 6).map((sermon, i) => (
-              <SermonCard key={sermon.id} sermon={sermon} onPlay={onPlaySermon} index={i} />
+              <SermonCard key={sermon.id} sermon={sermon} index={i} />
             ))}
           </div>
         </div>

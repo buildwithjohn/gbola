@@ -22,25 +22,15 @@ const pageVariants = {
   exit: { opacity: 0, y: -8, transition: { duration: 0.25 } },
 }
 
-function AnimatedRoutes({
-  onPlaySermon,
-}: {
-  onPlaySermon: (title: string, subtitle: string) => void
-}) {
+function AnimatedRoutes() {
   const location = useLocation()
   return (
     <AnimatePresence mode="wait">
-      <motion.div
-        key={location.pathname}
-        variants={pageVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-      >
+      <motion.div key={location.pathname} variants={pageVariants} initial="initial" animate="animate" exit="exit">
         <Routes location={location}>
-          <Route path="/" element={<Home onPlaySermon={onPlaySermon} />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/teachings" element={<Teachings onPlaySermon={onPlaySermon} />} />
+          <Route path="/teachings" element={<Teachings />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/events" element={<Events />} />
           <Route path="/invite" element={<Invite />} />
@@ -53,15 +43,14 @@ function AnimatedRoutes({
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false)
-  const { player, openSermon, togglePlay, closePlayer, seek, elapsedStr, totalStr } =
-    useAudioPlayer()
+  const { player, togglePlay, closePlayer, seek, elapsedStr, totalStr } = useAudioPlayer()
 
   return (
     <BrowserRouter>
       <div className={darkMode ? 'dark' : ''}>
         <Navbar darkMode={darkMode} toggleDark={() => setDarkMode((v) => !v)} />
         <main>
-          <AnimatedRoutes onPlaySermon={openSermon} />
+          <AnimatedRoutes />
         </main>
         <Footer />
         <AudioPlayer
