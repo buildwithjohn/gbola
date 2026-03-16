@@ -13,6 +13,7 @@ import { sermons } from '@/data/sermons'
 import { events } from '@/data/events'
 import { youtubeVideos, YOUTUBE_CHANNEL_URL } from '@/data/videos'
 import prayerConferenceFlyer from '@/assets/prayer-conference-flyer.jpg'
+import articleP1 from '@/assets/article-prophecy-p1.jpg'
 
 // Map event IDs to flyer images
 const flyerMap: Record<string, string> = {
@@ -219,6 +220,61 @@ export default function Home() {
         quote="Prayer is not a religious duty — it is the breath of the spirit-filled believer. When you learn to pray, you learn to reign."
         author="Rev. Adegbola Oladosu"
       />
+
+
+      {/* Articles Teaser */}
+      <section className="bg-[#112240] py-20">
+        <div className="max-w-6xl mx-auto px-8 lg:px-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-8 h-px bg-[#c9a84c]" />
+                <span className="text-[10px] tracking-[0.3em] uppercase text-[#c9a84c] font-medium">Written Word</span>
+              </div>
+              <h2 className="font-serif font-semibold text-white leading-[1.1] mb-5" style={{ fontSize: 'clamp(1.8rem, 3vw, 2.8rem)' }}>
+                Featured Article
+              </h2>
+              <div className="border-l-4 border-[#c9a84c] pl-5 mb-6">
+                <p className="font-serif italic text-white/80 text-lg leading-[1.6]">
+                  "The simple answer to whether God still speaks through visions and dreams is 'Yes.' But we must be careful how we apply this. Every vision and dream must agree with scripture."
+                </p>
+              </div>
+              <h3 className="font-serif text-xl font-semibold text-[#e8c97a] mb-2">
+                Leading Through Prophecy, Dreams and Visions
+              </h3>
+              <p className="text-white/50 text-sm leading-[1.75] mb-6">
+                Published in <span className="text-[#c9a84c]">Faith Digest</span> · 2022
+              </p>
+              <Link
+                to="/articles"
+                className="inline-flex items-center gap-2.5 text-[11px] tracking-[0.18em] uppercase font-semibold text-[#0a1628] px-8 py-4 hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(201,168,76,0.3)] transition-all duration-300"
+                style={{ background: 'linear-gradient(135deg, #c9a84c, #e8c97a)' }}
+              >
+                Read Full Article
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <img
+                src={articleP1}
+                alt="Leading Through Prophecy, Dreams and Visions — Faith Digest"
+                className="w-full max-w-sm mx-auto shadow-[0_20px_60px_rgba(0,0,0,0.5)] hover:shadow-[0_24px_80px_rgba(0,0,0,0.6)] transition-shadow duration-500"
+              />
+              <div className="absolute top-3 left-4 bg-[#c9a84c] text-[#0a1628] text-[9px] tracking-[0.2em] uppercase font-bold px-3 py-1.5">
+                Faith Digest · 2022
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* Upcoming Events */}
       <section className="bg-[#f8f6f0] py-28">

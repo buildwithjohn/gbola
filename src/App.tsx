@@ -11,6 +11,7 @@ import About from '@/pages/About'
 import Teachings from '@/pages/Teachings'
 import Videos from '@/pages/Videos'
 import Events from '@/pages/Events'
+import Articles from '@/pages/Articles'
 import Invite from '@/pages/Invite'
 import Contact from '@/pages/Contact'
 
@@ -26,19 +27,14 @@ function AnimatedRoutes() {
   const location = useLocation()
   return (
     <AnimatePresence mode="wait">
-      <motion.div
-        key={location.pathname}
-        variants={pageVariants}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-      >
+      <motion.div key={location.pathname} variants={pageVariants} initial="initial" animate="animate" exit="exit">
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/teachings" element={<Teachings />} />
           <Route path="/videos" element={<Videos />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/articles" element={<Articles />} />
           <Route path="/invite" element={<Invite />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
@@ -48,22 +44,16 @@ function AnimatedRoutes() {
 }
 
 export default function App() {
-  // Initialise from localStorage so preference survives page refresh
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem('gbola-dark-mode')
     if (saved !== null) return saved === 'true'
-    // Default: respect OS preference
     return window.matchMedia('(prefers-color-scheme: dark)').matches
   })
 
-  // Apply / remove `dark` class on <html> — affects the entire document
   useEffect(() => {
     const html = document.documentElement
-    if (darkMode) {
-      html.classList.add('dark')
-    } else {
-      html.classList.remove('dark')
-    }
+    if (darkMode) html.classList.add('dark')
+    else html.classList.remove('dark')
     localStorage.setItem('gbola-dark-mode', String(darkMode))
   }, [darkMode])
 

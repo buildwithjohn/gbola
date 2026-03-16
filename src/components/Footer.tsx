@@ -96,6 +96,7 @@ export default function Footer() {
                 { label: 'About', to: '/about' },
                 { label: 'Teachings', to: '/teachings' },
                 { label: 'Videos', to: '/videos' },
+              { label: 'Articles', to: '/articles' },
                 { label: 'Events', to: '/events' },
                 { label: 'Invite', to: '/invite' },
                 { label: 'Contact', to: '/contact' },

@@ -14,6 +14,7 @@ const navLinks = [
   { label: 'Teachings', to: '/teachings' },
   { label: 'Videos', to: '/videos' },
   { label: 'Events', to: '/events' },
+  { label: 'Articles', to: '/articles' },
   { label: 'Invite', to: '/invite' },
   { label: 'Contact', to: '/contact' },
 ]
