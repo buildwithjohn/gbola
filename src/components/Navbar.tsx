@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Moon, Sun } from 'lucide-react'
-import logoImg from '@/assets/logo.jpg'
+import logoImg from '@/assets/logo.png'
 
 interface NavbarProps {
   darkMode: boolean
@@ -75,7 +75,10 @@ export default function Navbar({ darkMode, toggleDark }: NavbarProps) {
             <img
               src={logoImg}
               alt="Rev. Gbola Oladosu — Home"
-              className="h-11 w-11 rounded-full object-cover object-top ring-1 ring-[#c9a84c]/40 group-hover:ring-2 group-hover:ring-[#c9a84c] group-hover:scale-105 transition-all duration-300"
+              className="h-12 w-auto object-contain group-hover:scale-105 group-hover:opacity-90 transition-all duration-300 drop-shadow-sm"
+              style={{ filter: 'drop-shadow(0 0 6px rgba(201,168,76,0))' }}
+              onMouseEnter={e => (e.currentTarget.style.filter = 'drop-shadow(0 0 8px rgba(201,168,76,0.35))')}
+              onMouseLeave={e => (e.currentTarget.style.filter = 'drop-shadow(0 0 6px rgba(201,168,76,0))')}
             />
           </Link>
           {/* Name text — also links home */}

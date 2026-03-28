@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logoImg from '@/assets/logo.jpg'
+import logoImg from '@/assets/logo.png'
 import { Mail, MapPin, Phone, Facebook, Instagram, Youtube, Twitter } from 'lucide-react'
 import { useState } from 'react'
 
@@ -53,18 +53,12 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-1">
+            <div className="mb-3">
               <img
                 src={logoImg}
                 alt="Rev. Gbola Oladosu"
-                className="h-12 w-12 rounded-full object-cover object-top flex-shrink-0 ring-1 ring-[#c9a84c]/40"
+                className="h-14 w-auto object-contain opacity-95"
               />
-              <div>
-                <span className="font-serif text-[1.1rem] font-semibold text-white block leading-tight">
-                  Rev. Gbola Oladosu
-                </span>
-                <span className="text-[10px] tracking-[0.22em] uppercase text-[#c9a84c]">Ministry</span>
-              </div>
             </div>
             <p className="text-white/38 text-sm leading-[1.75] mt-5 max-w-[260px]">
               Ordained with Rhema Ministerial Association International. Teaching the Word.
