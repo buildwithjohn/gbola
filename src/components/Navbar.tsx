@@ -65,22 +65,29 @@ export default function Navbar({ darkMode, toggleDark }: NavbarProps) {
         }`}
       >
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3 min-w-0">
-          {/* Logo image */}
-          <img
-            src={logoImg}
-            alt="Rev. Gbola Oladosu"
-            className="h-10 w-10 rounded-full object-cover object-top flex-shrink-0 ring-1 ring-[#c9a84c]/40"
-          />
-          <div className="flex flex-col gap-0.5 min-w-0">
-            <span className="font-serif text-base lg:text-lg font-semibold tracking-wide text-white whitespace-nowrap">
+        <div className="flex items-center gap-3 min-w-0">
+          {/* Logo — click to go home */}
+          <Link
+            to="/"
+            className="flex-shrink-0 cursor-pointer group"
+            title="Go to Home"
+          >
+            <img
+              src={logoImg}
+              alt="Rev. Gbola Oladosu — Home"
+              className="h-11 w-11 rounded-full object-cover object-top ring-1 ring-[#c9a84c]/40 group-hover:ring-2 group-hover:ring-[#c9a84c] group-hover:scale-105 transition-all duration-300"
+            />
+          </Link>
+          {/* Name text — also links home */}
+          <Link to="/" className="flex flex-col gap-0.5 min-w-0">
+            <span className="font-serif text-base lg:text-lg font-semibold tracking-wide text-white whitespace-nowrap hover:text-[#e8c97a] transition-colors duration-300">
               Rev. Gbola Oladosu
             </span>
             <span className="hidden sm:block text-[10px] tracking-[0.22em] uppercase text-[#c9a84c] font-medium">
               Teaching the Word · Abuja, Nigeria
             </span>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
         {/* Desktop Links */}
         <ul className="hidden xl:flex items-center gap-7 list-none">
