@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { Play, Mail } from 'lucide-react'
 import portraitImg from '@/assets/portrait.jpg'
+import logoImg from '@/assets/logo.jpg'
 
 export default function HeroSection() {
   return (
@@ -143,6 +144,11 @@ export default function HeroSection() {
           {/* Fades */}
           <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-[#0a1628] to-transparent z-20" />
           <div className="absolute top-0 left-0 bottom-0 w-1/3 bg-gradient-to-r from-[#0a1628] to-transparent z-20" />
+          {/* Branded logo watermark bottom-right */}
+          <div className="absolute bottom-8 right-4 z-30 flex items-center gap-2 bg-[#0a1628]/70 backdrop-blur-sm px-3 py-2 border border-[#c9a84c]/20">
+            <img src={logoImg} alt="Rev. Gbola Oladosu" className="h-7 w-7 rounded-full object-cover object-top" />
+            <span className="text-[9px] tracking-[0.18em] uppercase text-white/60 font-medium">Rev. Gbola Oladosu</span>
+          </div>
         </div>
       </motion.div>
 

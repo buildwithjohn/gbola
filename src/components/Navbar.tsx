@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Moon, Sun } from 'lucide-react'
+import logoImg from '@/assets/logo.jpg'
 
 interface NavbarProps {
   darkMode: boolean
@@ -64,13 +65,21 @@ export default function Navbar({ darkMode, toggleDark }: NavbarProps) {
         }`}
       >
         {/* Logo */}
-        <Link to="/" className="flex flex-col gap-0.5 min-w-0">
-          <span className="font-serif text-base lg:text-lg font-semibold tracking-wide text-white whitespace-nowrap">
-            Rev. Adegbola Oladosu
-          </span>
-          <span className="hidden sm:block text-[10px] tracking-[0.22em] uppercase text-[#c9a84c] font-medium">
-            Teaching the Word · Abuja, Nigeria
-          </span>
+        <Link to="/" className="flex items-center gap-3 min-w-0">
+          {/* Logo image */}
+          <img
+            src={logoImg}
+            alt="Rev. Gbola Oladosu"
+            className="h-10 w-10 rounded-full object-cover object-top flex-shrink-0 ring-1 ring-[#c9a84c]/40"
+          />
+          <div className="flex flex-col gap-0.5 min-w-0">
+            <span className="font-serif text-base lg:text-lg font-semibold tracking-wide text-white whitespace-nowrap">
+              Rev. Gbola Oladosu
+            </span>
+            <span className="hidden sm:block text-[10px] tracking-[0.22em] uppercase text-[#c9a84c] font-medium">
+              Teaching the Word · Abuja, Nigeria
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Links */}
