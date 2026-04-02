@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Moon, Sun } from 'lucide-react'
-import logoImg from '@/assets/logo.png'
+import logoImg from '@/assets/logo.jpg'
 
 interface NavbarProps {
   darkMode: boolean
