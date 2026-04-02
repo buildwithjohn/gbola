@@ -14,6 +14,7 @@ import Events from '@/pages/Events'
 import Articles from '@/pages/Articles'
 import Invite from '@/pages/Invite'
 import Contact from '@/pages/Contact'
+import Gallery from '@/pages/Gallery'
 
 import { useAudioPlayer } from '@/hooks/useAudioPlayer'
 
@@ -35,6 +36,7 @@ function AnimatedRoutes() {
           <Route path="/videos" element={<Videos />} />
           <Route path="/events" element={<Events />} />
           <Route path="/articles" element={<Articles />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/invite" element={<Invite />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

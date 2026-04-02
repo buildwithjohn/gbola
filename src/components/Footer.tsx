@@ -99,6 +99,7 @@ export default function Footer() {
                 { label: 'Teachings', to: '/teachings' },
                 { label: 'Videos', to: '/videos' },
               { label: 'Articles', to: '/articles' },
+              { label: 'Gallery', to: '/gallery' },
                 { label: 'Events', to: '/events' },
                 { label: 'Invite', to: '/invite' },
                 { label: 'Contact', to: '/contact' },
