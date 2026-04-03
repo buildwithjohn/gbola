@@ -12,6 +12,7 @@ import VideoCard from '@/components/VideoCard'
 import { sermons } from '@/data/sermons'
 import { events } from '@/data/events'
 import { youtubeVideos, YOUTUBE_CHANNEL_URL } from '@/data/videos'
+import { splitEvents, relativeLabel } from '@/lib/eventUtils'
 import { galleryPhotos } from '@/data/gallery'
 import prayerConferenceFlyer from '@/assets/prayer-conference-flyer.jpg'
 import authorityBelieversFlyer from '@/assets/authority-believer-flyer.jpg'
@@ -299,11 +300,32 @@ export default function Home() {
               All Events <ArrowRight size={12} />
             </Link>
           </div>
-          <div className="flex flex-col gap-4">
-            {events.map((event, i) => (
-              <EventCard key={event.id} event={event} index={i} flyerSrc={flyerMap[event.id]} />
-            ))}
-          </div>
+          {(() => {
+            const { upcoming } = splitEvents(events)
+            const displayEvents = upcoming.slice(0, 3)
+            if (displayEvents.length === 0) {
+              return (
+                <div className="text-center py-10 text-gray-400">
+                  <p className="font-serif text-lg">No upcoming events right now</p>
+                  <p className="text-sm mt-1">Check back soon!</p>
+                </div>
+              )
+            }
+            return (
+              <div className="flex flex-col gap-4">
+                {displayEvents.map((event, i) => (
+                  <div key={event.id} className="relative">
+                    <div className="absolute -top-2.5 right-3 z-10">
+                      <span className="text-[9px] tracking-[0.15em] uppercase bg-[#0a1628] text-[#c9a84c] px-2.5 py-1 font-semibold">
+                        {relativeLabel(event)}
+                      </span>
+                    </div>
+                    <EventCard event={event} index={i} flyerSrc={flyerMap[event.id]} />
+                  </div>
+                ))}
+              </div>
+            )
+          })()}
         </div>
       </section>
 
