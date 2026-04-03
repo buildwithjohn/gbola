@@ -14,10 +14,12 @@ import { events } from '@/data/events'
 import { youtubeVideos, YOUTUBE_CHANNEL_URL } from '@/data/videos'
 import { galleryPhotos } from '@/data/gallery'
 import prayerConferenceFlyer from '@/assets/prayer-conference-flyer.jpg'
+import authorityBelieversFlyer from '@/assets/authority-believer-flyer.jpg'
 import articleP1 from '@/assets/article-prophecy-p1.jpg'
 
 // Map event IDs to flyer images
 const flyerMap: Record<string, string> = {
+  'rhema-authority-1': authorityBelieversFlyer,
   'scripture-city-1': prayerConferenceFlyer,
   'scripture-city-2': prayerConferenceFlyer,
 }

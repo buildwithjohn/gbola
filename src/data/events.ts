@@ -7,14 +7,27 @@ export interface MinistryEvent {
   location: string
   time: string
   tag: string
-  flyer?: string          // optional path to flyer image
-  featured?: boolean      // pin to top of list
-  coSpeakers?: string[]   // other ministers on the bill
-  host?: string           // hosting church / org
+  flyer?: string
+  featured?: boolean
+  coSpeakers?: string[]
+  host?: string
 }
 
 export const events: MinistryEvent[] = [
-  // ─── REAL / CONFIRMED UPCOMING ────────────────────────────────
+  // ─── CONFIRMED UPCOMING ─────────────────────────────────────────
+  {
+    id: 'rhema-authority-1',
+    day: '12',
+    month: 'Apr',
+    year: '2026',
+    title: 'Authority of the Believer 1 — Free Bible Class',
+    location: 'Rhema Bible Training Centre, Plot 1531, CAD Zone B11, Kaura District, beside Eagle FM Station, Abuja',
+    time: 'Sun–Tue (12th–14th Apr) · 5:00 PM – 8:30 PM daily',
+    tag: 'Bible Class',
+    featured: true,
+    host: 'Rhema Nigeria — Abuja Campus',
+    coSpeakers: ['Rev. Toks Adejuwon'],
+  },
   {
     id: 'scripture-city-1',
     day: '27',
