@@ -184,6 +184,52 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* Ministry Expression Teaser */}
+      <section className="bg-[#f8f6f0] py-24">
+        <div className="max-w-6xl mx-auto px-8 lg:px-12">
+          <div className="flex items-end justify-between mb-12 gap-5 flex-col sm:flex-row">
+            <div>
+              <div className="flex items-center gap-4 mb-3">
+                <div className="w-8 h-px bg-[#0a1628]" />
+                <span className="text-[10px] tracking-[0.3em] uppercase text-[#0a1628] font-medium">What We Do</span>
+              </div>
+              <h2 className="font-serif font-semibold text-[#0a1628]" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)' }}>
+                Ministry Expression
+              </h2>
+            </div>
+            <Link to="/ministry" className="inline-flex items-center gap-2 text-[#0a1628] text-[11px] tracking-[0.15em] uppercase font-semibold border border-[#0a1628] px-6 py-3 hover:bg-[#0a1628] hover:text-white transition-all duration-300 self-start">
+              Explore All <ArrowRight size={12} />
+            </Link>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { num: '01', label: 'Prayer Lab', desc: 'Monthly meetings for deep, intentional, Spirit-led prayer. Open to all believers.', color: '#0a1628', light: false },
+              { num: '02', label: 'Itinerant Ministry', desc: 'Teaching and ministering across churches, campuses, and conferences — with miracles, signs and wonders.', color: '#c9a84c', light: false },
+              { num: '03', label: 'Mentorship Table', desc: 'Intentional guidance for growth, clarity, purpose, and personal development.', color: '#f4f1eb', light: true },
+              { num: '04', label: 'Music', desc: 'A new expression of worship and the Word — currently in development.', color: '#112240', light: false, soon: true },
+            ].map(({ num, label, desc, color, light, soon }, i) => (
+              <motion.div key={label}
+                initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }} transition={{ delay: i * 0.09 }}
+                className="p-6 relative overflow-hidden group cursor-pointer hover:-translate-y-1 transition-transform duration-300"
+                style={{ backgroundColor: color }}>
+                <Link to="/ministry" className="absolute inset-0" />
+                <div className={`text-[9px] tracking-[0.3em] uppercase font-medium mb-4 ${light ? 'text-[#0a1628]/40' : 'text-white/30'}`}>{num}</div>
+                <h3 className={`font-serif text-xl font-semibold mb-3 leading-snug ${light ? 'text-[#0a1628]' : 'text-white'}`}>{label}</h3>
+                <p className={`text-sm leading-[1.75] ${light ? 'text-[#555]' : 'text-white/55'}`}>{desc}</p>
+                {soon && (
+                  <div className="absolute top-4 right-4 text-[8px] tracking-[0.2em] uppercase text-[#c9a84c] border border-[#c9a84c]/40 px-2 py-1">
+                    Soon
+                  </div>
+                )}
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#c9a84c] scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Latest Sermons */}
       <section className="bg-[#f4f1eb] py-28">
         <div className="max-w-6xl mx-auto px-8 lg:px-12">

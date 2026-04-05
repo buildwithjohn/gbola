@@ -15,6 +15,7 @@ const navLinks = [
   { label: 'Teachings', to: '/teachings' },
   { label: 'Videos', to: '/videos' },
   { label: 'Events', to: '/events' },
+  { label: 'Ministry', to: '/ministry' },
   { label: 'Articles', to: '/articles' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Invite', to: '/invite' },

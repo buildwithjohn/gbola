@@ -98,6 +98,7 @@ export default function Footer() {
                 { label: 'About', to: '/about' },
                 { label: 'Teachings', to: '/teachings' },
                 { label: 'Videos', to: '/videos' },
+              { label: 'Ministry', to: '/ministry' },
               { label: 'Articles', to: '/articles' },
               { label: 'Gallery', to: '/gallery' },
                 { label: 'Events', to: '/events' },

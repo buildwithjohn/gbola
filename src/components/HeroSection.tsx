@@ -34,7 +34,7 @@ export default function HeroSection() {
         >
           <div className="w-6 h-px bg-[#c9a84c]" />
           <span className="text-[9px] sm:text-[10px] tracking-[0.15em] sm:tracking-[0.28em] uppercase text-[#c9a84c] font-medium">
-            Ordained · Rhema Ministerial Association
+            Minister of the Word · Preacher · Teacher
           </span>
           <div className="w-6 h-px bg-[#c9a84c]" />
         </motion.div>
