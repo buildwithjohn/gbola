@@ -16,6 +16,16 @@ import { splitEvents, relativeLabel } from '@/lib/eventUtils'
 import { galleryPhotos } from '@/data/gallery'
 import prayerConferenceFlyer from '@/assets/prayer-conference-flyer.jpg'
 import authorityBelieversFlyer from '@/assets/authority-believer-flyer.jpg'
+import rmaiGroup from '@/assets/past-flyers/rmai-faithful-able-group.jpg'
+import lapUntangled from '@/assets/past-flyers/lap-untangled-2024.jpg'
+import gopnetGloryNov from '@/assets/past-flyers/gopnet-glory-conf-2024-nov.jpg'
+import gopnetGloryMar from '@/assets/past-flyers/gopnet-glory-conf-mar.jpg'
+import zionCrossover from '@/assets/past-flyers/zion-dwellers-crossover-2024.jpg'
+import ncpcYouth from '@/assets/past-flyers/ncpc-youth-convention.jpg'
+import charisTabernacle from '@/assets/past-flyers/charis-tabernacle-dec-2024.jpg'
+import bibleStudyZone from '@/assets/past-flyers/bible-study-zone-feb.jpg'
+import agnesAgada from '@/assets/past-flyers/agnes-agada-50th-birthday.jpg'
+import pathlightUpperRoom from '@/assets/past-flyers/pathlight-upper-room-mar25.jpg'
 import articleP1 from '@/assets/article-prophecy-p1.jpg'
 
 // Map event IDs to flyer images
@@ -23,6 +33,16 @@ const flyerMap: Record<string, string> = {
   'rhema-authority-1': authorityBelieversFlyer,
   'scripture-city-1': prayerConferenceFlyer,
   'scripture-city-2': prayerConferenceFlyer,
+  'rmai-faithful-able-2025': rmaiGroup,
+  'lap-untangled-2024': lapUntangled,
+  'gopnet-glory-nov-2024': gopnetGloryNov,
+  'gopnet-glory-mar-2024': gopnetGloryMar,
+  'zion-crossover-2024': zionCrossover,
+  'ncpc-youth-convention': ncpcYouth,
+  'charis-tabernacle-dec-2024': charisTabernacle,
+  'bible-study-zone-feb': bibleStudyZone,
+  'agnes-agada-50th': agnesAgada,
+  'pathlight-upper-room-mar25': pathlightUpperRoom,
 }
 
 import preachingImg from '@/assets/preaching.jpg'
