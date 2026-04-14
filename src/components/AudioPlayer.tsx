@@ -68,7 +68,7 @@ export default function AudioPlayer({
             </button>
           </div>
 
-          {/* Progress — dynamic elapsed/total time */}
+          {/* Progress, dynamic elapsed/total time */}
           <div className="hidden md:flex items-center gap-3 flex-1 max-w-sm">
             <span className="text-[11px] text-white/35 tabular-nums w-8 text-right">
               {elapsedStr}

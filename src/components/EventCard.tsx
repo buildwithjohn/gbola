@@ -90,7 +90,7 @@ export default function EventCard({ event, index = 0, flyerSrc }: EventCardProps
           )}
         </div>
 
-        {/* Right — tag + flyer button */}
+        {/* Right, tag + flyer button */}
         <div className="flex flex-col items-end gap-2 ml-2">
           <div className="hidden md:block text-[10px] tracking-[0.18em] uppercase text-[#c9a84c] border border-[#c9a84c]/40 px-4 py-1.5 whitespace-nowrap">
             {event.tag}

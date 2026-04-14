@@ -1,41 +1,10 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
+import MinistryTimeline from '@/components/MinistryTimeline'
 import portraitImg from '@/assets/portrait.jpg'
 import coupleImg from '@/assets/couple.jpg'
 
-const timeline = [
-  {
-    year: 'University Years',
-    title: 'The Call Begins',
-    desc: "Rev. Gbola's ministry journey began during his undergraduate years at Obafemi Awolowo University, Ile-Ife. It was here that the Lord's calling became unmistakably clear — a call to preach the Word and lead people into intimacy with God.",
-  },
-  {
-    year: 'Rhema Nigeria',
-    title: 'Ministerial Training',
-    desc: 'He enrolled at the Rhema Bible Training Center Nigeria, where he pursued a Diploma in Ministerial Studies with emphasis on Spiritual and Supportive Leadership — deepening his knowledge of the Word and his understanding of Spirit-led ministry.',
-  },
-  {
-    year: 'Ordination',
-    title: 'Ordained & Credentialed',
-    desc: 'Rev. Adegbola was ordained and credentialed with the Rhema Ministerial Association International (Kenneth Hagin Ministries), Nigeria — a recognition of his calling, character, and commitment to the Gospel.',
-  },
-  {
-    year: 'Itinerant Ministry',
-    title: 'Preaching the Gospel',
-    desc: 'He began itinerating widely across Nigeria — preaching at conferences, prayer summits, and special services — carrying a clear teaching anointing and a strong ministry in prayer and the Holy Spirit.',
-  },
-  {
-    year: 'Rhema Leadership',
-    title: 'Serving in Leadership',
-    desc: 'Rev. Gbola took on leadership and administrative roles within Rhema Nigeria, as well as an instructing role at the Bible Training Center — raising and equipping the next generation of ministers.',
-  },
-  {
-    year: 'Today',
-    title: 'Based in Abuja',
-    desc: 'Together with his wife, Mrs. Deborah Oluwadamilola Oladosu, he is based in Abuja, Nigeria — continuing to preach the Word, train ministers, and lead believers into a life of prayer and Holy Spirit intimacy.',
-  },
-]
 
 export default function About() {
   return (
@@ -102,19 +71,19 @@ export default function About() {
               </h2>
               <div className="space-y-5 text-[0.95rem] leading-[1.85] text-[#4a4a4a]">
                 <p>
-                  Rev. Adegbola Oladosu — fondly called "Brother Gbola" — is an ordained minister
+                  Rev. Adegbola Oladosu, fondly called "Brother Gbola", is an ordained minister
                   of the Gospel, credentialed with the Rhema Ministerial Association International
                   (Kenneth Hagin Ministries), Nigeria.
                 </p>
                 <p>
                   His ministerial journey began in his undergraduate years, where the Lord's calling
-                  became clear — a calling to teach the Word with precision, to build a life of prayer,
+                  became clear, a calling to teach the Word with precision, to build a life of prayer,
                   and to lead believers into deep intimacy with the Holy Spirit.
                 </p>
                 <p>
                   After completing his formal ministerial training at the Rhema Bible Training Center
-                  Nigeria — earning a Diploma in Ministerial Studies with emphasis on Spiritual and
-                  Supportive Leadership — he was ordained and credentialed with RMAI, the ministerial
+                  Nigeria, earning a Diploma in Ministerial Studies with emphasis on Spiritual and
+                  Supportive Leadership, he was ordained and credentialed with RMAI, the ministerial
                   arm of Kenneth Hagin Ministries.
                 </p>
                 <p>
@@ -152,55 +121,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="bg-[#0a1628] py-28">
-        <div className="max-w-4xl mx-auto px-8 lg:px-12">
-          <div className="text-center mb-16">
-            <div className="flex items-center justify-center gap-4 mb-4">
-              <div className="w-8 h-px bg-[#c9a84c]" />
-              <span className="text-[10px] tracking-[0.3em] uppercase text-[#c9a84c] font-medium">The Journey</span>
-              <div className="w-8 h-px bg-[#c9a84c]" />
-            </div>
-            <h2
-              className="font-serif font-semibold text-white"
-              style={{ fontSize: 'clamp(1.8rem, 3vw, 2.8rem)' }}
-            >
-              A Walk of Faithfulness
-            </h2>
-          </div>
-
-          <div className="relative">
-            {/* Vertical line */}
-            <div className="absolute left-6 top-0 bottom-0 w-px bg-[#c9a84c]/20" />
-
-            <div className="space-y-10">
-              {timeline.map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.08 }}
-                  className="flex gap-8"
-                >
-                  {/* Dot */}
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full border border-[#c9a84c]/40 bg-[#112240] flex items-center justify-center relative z-10">
-                    <div className="w-2.5 h-2.5 rounded-full bg-[#c9a84c]" />
-                  </div>
-                  {/* Content */}
-                  <div className="pb-2">
-                    <div className="text-[10px] tracking-[0.2em] uppercase text-[#c9a84c] font-medium mb-1.5">
-                      {item.year}
-                    </div>
-                    <h3 className="font-serif text-xl font-semibold text-white mb-2.5">{item.title}</h3>
-                    <p className="text-white/52 text-sm leading-[1.8]">{item.desc}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <MinistryTimeline />
 
       {/* Family Section */}
       <section className="bg-[#f8f6f0] py-28">
@@ -222,12 +143,12 @@ export default function About() {
                 Together in Ministry
               </h2>
               <p className="text-[#4a4a4a] text-[0.95rem] leading-[1.85] mb-5">
-                Rev. Adegbola Oladosu is married to Mrs. Deborah Oluwadamilola Oladosu — a
+                Rev. Adegbola Oladosu is married to Mrs. Deborah Oluwadamilola Oladosu, a
                 gracious partner in life and ministry. Together, they are based in Abuja, Nigeria,
                 faithfully serving the Lord and the Body of Christ.
               </p>
               <p className="text-[#4a4a4a] text-[0.95rem] leading-[1.85]">
-                Their home is a testimony of grace, prayer, and the presence of God — a foundation
+                Their home is a testimony of grace, prayer, and the presence of God, a foundation
                 from which ministry flows.
               </p>
               <Link

@@ -51,24 +51,24 @@ import preachingImg from '@/assets/preaching.jpg'
 
 const focusPillars = [
   {
-    icon: HandHeart,
-    title: 'Prayer',
-    desc: 'Building a life and culture of prayer that moves heaven and transforms earth — teaching believers to prevail in intercession.',
+    icon: BookOpen,
+    title: 'The Word',
+    desc: 'Grounded in Scripture, we are committed to building on The Word, in sound doctrine, Christ-centred teaching, and the spiritual formation of believers through truth. (Acts 20:32, Col. 3:16).',
   },
   {
     icon: Flame,
-    title: 'Intimacy with God',
-    desc: 'Guiding souls into the secret place — where the knowledge of God is not merely intellectual but deeply experiential.',
+    title: 'The Spirit',
+    desc: 'We value the ministry of the Holy Spirit, embracing prayer, divine direction, spiritual sensitivity, and life in His power. (Rom. 8:14, Zec. 4:6).',
   },
   {
     icon: Users,
-    title: 'The Holy Spirit',
-    desc: 'Teaching the Body of Christ to follow and flow with the Holy Spirit — yielding to His voice, gifts, and leading in daily life.',
+    title: 'Faith',
+    desc: 'We believe believers are called to walk with God in confidence, obedience, and unwavering trust in His Word. (2 Cor. 5:7, Heb. 11:6).',
   },
   {
-    icon: BookOpen,
-    title: 'Teaching the Word',
-    desc: 'Expounding Scripture with clarity, revelation, and precision — making the Word practical and life-giving for every believer.',
+    icon: HandHeart,
+    title: 'Love',
+    desc: 'We believe the life of Christ is best revealed through love, humility, compassion, and service to God and people. (John 13:34-35, Gal. 5:6).',
   },
 ]
 
@@ -126,9 +126,7 @@ export default function Home() {
               <p className="text-[#4a4a4a] text-[0.95rem] leading-[1.85] mb-4">
                 Rev. Adegbola Oladosu is an ordained minister of the Gospel, credentialed with the
                 Rhema Ministerial Association International (Kenneth Hagin Ministries), Nigeria.
-                From his undergraduate years, he has faithfully walked in the Lord's calling —
-                preaching the Word, cultivating prayer, and leading believers into deeper intimacy
-                with the Holy Spirit.
+                From his undergraduate years, he has faithfully walked in the Lord's calling, preaching the Word, cultivating prayer, and leading believers into deeper intimacy with the Holy Spirit.
               </p>
               <p className="text-[#4a4a4a] text-[0.95rem] leading-[1.85] mb-8">
                 He serves within Rhema Nigeria in both leadership and administrative capacities, and
@@ -139,9 +137,9 @@ export default function Home() {
               {/* Credentials */}
               <div className="space-y-3 mb-8">
                 {[
-                  'Diploma in Ministerial Studies — Rhema Bible Training Center Nigeria',
-                  'B.Sc. — Obafemi Awolowo University, Ile-Ife',
-                  'Certified in Business Intelligence & Financial Modeling — CFI',
+                  'Diploma in Ministerial Studies, Rhema Bible Training Center Nigeria',
+                  'B.Sc., Obafemi Awolowo University, Ile-Ife',
+                  'Certified in Business Intelligence & Financial Modeling, CFI',
                 ].map((cred) => (
                   <div
                     key={cred}
@@ -224,10 +222,10 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              { num: '01', label: 'Prayer Lab', desc: 'Monthly meetings for deep, intentional, Spirit-led prayer. Open to all believers.', color: '#0a1628', light: false },
-              { num: '02', label: 'Itinerant Ministry', desc: 'Teaching and ministering across churches, campuses, and conferences — with miracles, signs and wonders.', color: '#c9a84c', light: false },
-              { num: '03', label: 'Mentorship Table', desc: 'Intentional guidance for growth, clarity, purpose, and personal development.', color: '#f4f1eb', light: true },
-              { num: '04', label: 'Music', desc: 'A new expression of worship and the Word — currently in development.', color: '#112240', light: false, soon: true },
+              { num: '01', label: 'Itinerant Ministry', desc: 'Teaching and ministering across churches, campuses, and conferences, with miracles, signs and wonders following.', color: '#0a1628', light: false, id: 'itinerant' },
+              { num: '02', label: 'Prayer Lab', desc: 'Monthly meetings for deep, intentional, Spirit-led prayer. Open to all believers.', color: '#c9a84c', light: false, id: 'prayer-lab' },
+              { num: '03', label: 'Mentorship Table', desc: 'Intentional guidance for growth, clarity, purpose, and personal development.', color: '#0a1628', light: false, id: 'mentorship' },
+              { num: '04', label: 'Music', desc: 'A new expression of worship and the Word, currently in development.', color: '#c9a84c', light: false, soon: true, id: 'music' },
             ].map(({ num, label, desc, color, light, soon }, i) => (
               <motion.div key={label}
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
@@ -284,7 +282,7 @@ export default function Home() {
 
       {/* Quote */}
       <TestimonialQuote
-        quote="Prayer is not a religious duty — it is the breath of the spirit-filled believer. When you learn to pray, you learn to reign."
+        quote="Prayer is not a religious duty. It is the breath of the spirit-filled believer. When you learn to pray, you learn to reign."
         author="Rev. Adegbola Oladosu"
       />
 
@@ -332,7 +330,7 @@ export default function Home() {
             >
               <img
                 src={articleP1}
-                alt="Leading Through Prophecy, Dreams and Visions — Faith Digest"
+                alt="Leading Through Prophecy, Dreams and Visions, Faith Digest"
                 className="w-full max-w-sm mx-auto shadow-[0_20px_60px_rgba(0,0,0,0.5)] hover:shadow-[0_24px_80px_rgba(0,0,0,0.6)] transition-shadow duration-500"
               />
               <div className="absolute top-3 left-4 bg-[#c9a84c] text-[#0a1628] text-[9px] tracking-[0.2em] uppercase font-bold px-3 py-1.5">
@@ -446,7 +444,7 @@ export default function Home() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 saturate-90 group-hover:saturate-100" />
               <div className="absolute inset-0 bg-[#0a1628]/0 group-hover:bg-[#0a1628]/30 transition-all duration-300" />
             </Link>
-            {/* Bottom right — overlay CTA */}
+            {/* Bottom right, overlay CTA */}
             <Link to="/gallery" className="overflow-hidden relative group cursor-pointer">
               <img src={galleryPhotos[18].src} alt={galleryPhotos[18].alt}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 saturate-50 group-hover:saturate-100" />

@@ -35,14 +35,14 @@ const flyerMap: Record<string, string> = {
   'pathlight-upper-room-mar25': pathlightUpperRoom,
 }
 
-// Featured spotlight — the next upcoming event with a flyer
+// Featured spotlight, the next upcoming event with a flyer
 const spotlightEvent = {
   id: 'rhema-authority-1',
   flyer: authorityBelieversFlyer,
-  badge: 'Rhema Nigeria — Abuja Campus · Open to the Public',
+  badge: 'Rhema Nigeria, Abuja Campus · Open to the Public',
   title: 'Authority of the Believer 1',
-  subtitle: 'A Taster Session — Free Bible Class',
-  description: 'Too many believers live beneath what Christ has provided. Too many tolerate what they have authority over. Jesus said: "I give you the authority… over all the power of the enemy." — Luke 10:19 (NKJV)\n\nIt\'s time to rise.',
+  subtitle: 'A Taster Session: Free Bible Class',
+  description: 'Too many believers live beneath what Christ has provided. Too many tolerate what they have authority over. Jesus said: "I give you the authority… over all the power of the enemy.", Luke 10:19 (NKJV)\n\nIt\'s time to rise.',
   bullets: [
     'Come ready to be grounded in truth',
     'Come ready to grow in confidence',
@@ -173,7 +173,7 @@ export default function Events() {
               <div className="flex items-center gap-4 mb-3">
                 <Clock size={14} className="text-[#0a1628]" />
                 <span className="text-[10px] tracking-[0.3em] uppercase text-[#0a1628] font-medium">
-                  Upcoming — {upcoming.length} event{upcoming.length !== 1 ? 's' : ''}
+                  Upcoming, {upcoming.length} event{upcoming.length !== 1 ? 's' : ''}
                 </span>
               </div>
               <p className="text-[11px] text-gray-400 mb-8 ml-6">Dates are auto-detected. Past events move down automatically.</p>
@@ -196,7 +196,7 @@ export default function Events() {
             <div className="text-center py-16">
               <CalendarCheck size={40} className="text-gray-300 mx-auto mb-4" />
               <h3 className="font-serif text-2xl text-gray-400 mb-2">No Upcoming Events</h3>
-              <p className="text-gray-400 text-sm">Check back soon — new events will appear here automatically.</p>
+              <p className="text-gray-400 text-sm">Check back soon, new events will appear here automatically.</p>
             </div>
           )}
 
@@ -210,7 +210,7 @@ export default function Events() {
                 <div className="flex items-center gap-3">
                   <CheckCircle size={14} className="text-gray-300" />
                   <span className="text-[10px] tracking-[0.25em] uppercase text-gray-400 font-medium group-hover:text-[#0a1628] transition-colors duration-300">
-                    Past Events — {past.length}
+                    Past Events, {past.length}
                   </span>
                 </div>
                 <motion.div animate={{ rotate: pastOpen ? 180 : 0 }} transition={{ duration: 0.25 }}>

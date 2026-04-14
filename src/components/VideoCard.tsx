@@ -14,7 +14,7 @@ export default function VideoCard({ video, index = 0 }: VideoCardProps) {
   const thumbnailUrl = `https://img.youtube.com/vi/${video.id}/maxresdefault.jpg`
   const sdThumbnail = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`
 
-  // Fetch real video title from YouTube oEmbed API (runs in browser — not blocked)
+  // Fetch real video title from YouTube oEmbed API (runs in browser, not blocked)
   useEffect(() => {
     fetch(`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${video.id}&format=json`)
       .then((r) => r.json())
@@ -45,7 +45,7 @@ export default function VideoCard({ video, index = 0 }: VideoCardProps) {
             className="relative w-full h-full cursor-pointer"
             onClick={() => setPlaying(true)}
           >
-            {/* Thumbnail — tries maxres first, falls back to hqdefault */}
+            {/* Thumbnail, tries maxres first, falls back to hqdefault */}
             <img
               src={thumbnailUrl}
               alt={title}

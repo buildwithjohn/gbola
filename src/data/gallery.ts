@@ -57,19 +57,19 @@ export const galleryCategories: GalleryCategory[] = [
 
 export const galleryPhotos: GalleryPhoto[] = [
   // Family
-  { id: 'fam1', src: fam1, category: 'Family Moments', alt: 'Rev. Gbola Oladosu — Family' },
-  { id: 'fam2', src: fam2, category: 'Family Moments', alt: 'Rev. Gbola Oladosu — Family' },
-  { id: 'fam3', src: fam3, category: 'Family Moments', alt: 'Rev. Gbola Oladosu — Family' },
-  { id: 'fam4', src: fam4, category: 'Family Moments', alt: 'Rev. Gbola Oladosu — Family' },
-  { id: 'fam5', src: fam5, category: 'Family Moments', alt: 'Rev. Gbola Oladosu — Family' },
-  { id: 'fam6', src: fam6, category: 'Family Moments', alt: 'Rev. Gbola Oladosu — Family' },
-  { id: 'fam7', src: fam7, category: 'Family Moments', alt: 'Rev. Gbola Oladosu — Family' },
-  { id: 'fam8', src: fam8, category: 'Family Moments', alt: 'Rev. Gbola Oladosu — Family' },
+  { id: 'fam1', src: fam1, category: 'Family Moments', alt: 'Rev. Gbola Oladosu, Family' },
+  { id: 'fam2', src: fam2, category: 'Family Moments', alt: 'Rev. Gbola Oladosu, Family' },
+  { id: 'fam3', src: fam3, category: 'Family Moments', alt: 'Rev. Gbola Oladosu, Family' },
+  { id: 'fam4', src: fam4, category: 'Family Moments', alt: 'Rev. Gbola Oladosu, Family' },
+  { id: 'fam5', src: fam5, category: 'Family Moments', alt: 'Rev. Gbola Oladosu, Family' },
+  { id: 'fam6', src: fam6, category: 'Family Moments', alt: 'Rev. Gbola Oladosu, Family' },
+  { id: 'fam7', src: fam7, category: 'Family Moments', alt: 'Rev. Gbola Oladosu, Family' },
+  { id: 'fam8', src: fam8, category: 'Family Moments', alt: 'Rev. Gbola Oladosu, Family' },
 
   // Ordination
-  { id: 'ord1', src: ord1, category: 'Ordination', alt: 'Rev. Gbola Oladosu — Ordination' },
-  { id: 'ord2', src: ord2, category: 'Ordination', alt: 'Rev. Gbola Oladosu — Ordination' },
-  { id: 'ord3', src: ord3, category: 'Ordination', alt: 'Rev. Gbola Oladosu — Ordination' },
+  { id: 'ord1', src: ord1, category: 'Ordination', alt: 'Rev. Gbola Oladosu, Ordination' },
+  { id: 'ord2', src: ord2, category: 'Ordination', alt: 'Rev. Gbola Oladosu, Ordination' },
+  { id: 'ord3', src: ord3, category: 'Ordination', alt: 'Rev. Gbola Oladosu, Ordination' },
 
   // RMAI
   { id: 'rmai1', src: rmai1, category: 'RMAI Ministers Conference', alt: 'RMAI Ministers Conference' },

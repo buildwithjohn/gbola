@@ -37,7 +37,7 @@ export default function Navbar({ darkMode, toggleDark }: NavbarProps) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  // Close menu on route change — use a ref to avoid calling setState
+  // Close menu on route change, use a ref to avoid calling setState
   // synchronously inside effect; schedule via microtask instead
   useEffect(() => {
     if (menuOpenRef.current) {
@@ -68,7 +68,7 @@ export default function Navbar({ darkMode, toggleDark }: NavbarProps) {
       >
         {/* Logo */}
         <div className="flex items-center gap-3 min-w-0">
-          {/* Logo — click to go home */}
+          {/* Logo, click to go home */}
           <Link
             to="/"
             className="flex-shrink-0 cursor-pointer group"
@@ -76,14 +76,14 @@ export default function Navbar({ darkMode, toggleDark }: NavbarProps) {
           >
             <img
               src={logoImg}
-              alt="Rev. Gbola Oladosu — Home"
+              alt="Rev. Gbola Oladosu, Home"
               className="h-12 w-auto object-contain group-hover:scale-105 group-hover:opacity-90 transition-all duration-300 drop-shadow-sm"
               style={{ filter: 'drop-shadow(0 0 6px rgba(201,168,76,0))' }}
               onMouseEnter={e => (e.currentTarget.style.filter = 'drop-shadow(0 0 8px rgba(201,168,76,0.35))')}
               onMouseLeave={e => (e.currentTarget.style.filter = 'drop-shadow(0 0 6px rgba(201,168,76,0))')}
             />
           </Link>
-          {/* Name text — also links home */}
+          {/* Name text, also links home */}
           <Link to="/" className="flex flex-col gap-0.5 min-w-0">
             <span className="font-serif text-base lg:text-lg font-semibold tracking-wide text-white whitespace-nowrap hover:text-[#e8c97a] transition-colors duration-300">
               Rev. Gbola Oladosu

@@ -8,11 +8,11 @@ export interface Sermon {
   duration: string
   excerpt: string
   scripture: string
-  youtubeId: string   // Real YouTube video ID — the actual content
+  youtubeId: string   // Real YouTube video ID, the actual content
 }
 
 // These 5 sermons are backed by real YouTube videos from @gbola_oladosu
-// Title/category/scripture are descriptive labels — the real content is the YouTube embed
+// Title/category/scripture are descriptive labels, the real content is the YouTube embed
 export const sermons: Sermon[] = [
   {
     id: '1',

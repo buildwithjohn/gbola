@@ -15,7 +15,7 @@ export default function HeroSection() {
           backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(201,168,76,0.4) 60px, rgba(201,168,76,0.4) 61px), repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(201,168,76,0.4) 60px, rgba(201,168,76,0.4) 61px)`,
         }}
       />
-      {/* Gold radial glow — using inline style (bg-gradient-radial is not a Tailwind utility) */}
+      {/* Gold radial glow, using inline style (bg-gradient-radial is not a Tailwind utility) */}
       <div
         className="absolute right-0 top-0 bottom-0 w-3/5 pointer-events-none"
         style={{

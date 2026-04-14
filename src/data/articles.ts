@@ -43,7 +43,7 @@ export const articles: Article[] = [
         {
           heading: undefined,
           paragraphs: [
-            'Acts 2:17 (KJV) — "And it shall come to pass in the last days, saith God, I will pour out of my Spirit upon all flesh; and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams."',
+            'Acts 2:17 (KJV), "And it shall come to pass in the last days, saith God, I will pour out of my Spirit upon all flesh; and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams."',
             'This prophecy, first spoken by the prophet Joel (Joel 2:28), shows us that the outpouring of the Spirit in the last days will be accompanied by prophecy, visions, and dreams.',
           ],
         },

@@ -63,7 +63,7 @@ export default function Articles() {
             transition={{ delay: 0.2 }}
             className="text-white/55 text-base max-w-xl leading-[1.75]"
           >
-            Published writings from Rev. Adegbola Oladosu — expounding the Word with clarity and precision.
+            Published writings from Rev. Adegbola Oladosu, expounding the Word with clarity and precision.
           </motion.p>
         </div>
       </section>
