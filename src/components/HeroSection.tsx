@@ -47,7 +47,7 @@ export default function HeroSection() {
           className="font-serif font-light leading-[1.0] text-white mb-2"
           style={{ fontSize: 'clamp(3rem, 5vw, 5.5rem)' }}
         >
-          Rev. <em className="italic text-[#e8c97a]">Adegbola</em>
+          Rev. <em className="italic text-[#e8c97a]">Gbola</em>
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

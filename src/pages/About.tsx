@@ -33,7 +33,7 @@ export default function About() {
             className="font-serif font-semibold text-white leading-[1.1]"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}
           >
-            About Rev. Gbola Oladosu
+            About Rev. Adegbola Isaac Oladosu
           </motion.h1>
         </div>
       </section>
