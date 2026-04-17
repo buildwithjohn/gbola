@@ -16,6 +16,7 @@ import { splitEvents, relativeLabel } from '@/lib/eventUtils'
 import { galleryPhotos } from '@/data/gallery'
 import prayerConferenceFlyer from '@/assets/prayer-conference-flyer.jpg'
 import authorityBelieversFlyer from '@/assets/authority-believer-flyer.jpg'
+import prayerSchoolFlyer from '@/assets/prayer-school-flyer.png'
 import rmaiGroup from '@/assets/past-flyers/rmai-faithful-able-group.jpg'
 import lapUntangled from '@/assets/past-flyers/lap-untangled-2024.jpg'
 import gopnetGloryNov from '@/assets/past-flyers/gopnet-glory-conf-2024-nov.jpg'
@@ -30,6 +31,7 @@ import articleP1 from '@/assets/article-prophecy-p1.jpg'
 
 // Map event IDs to flyer images
 const flyerMap: Record<string, string> = {
+  'prayer-school-rhema': prayerSchoolFlyer,
   'rhema-authority-1': authorityBelieversFlyer,
   'scripture-city-1': prayerConferenceFlyer,
   'scripture-city-2': prayerConferenceFlyer,
@@ -92,7 +94,7 @@ export default function Home() {
             >
               <img
                 src={preachingImg}
-                alt="Rev. Adegbola Oladosu preaching"
+                alt="Rev. Gbola Oladosu preaching"
                 className="w-full aspect-[3/4] object-cover object-top"
               />
               {/* Gold accent frame */}
@@ -124,7 +126,7 @@ export default function Home() {
                 A Faithful Steward<br />of the Gospel
               </h2>
               <p className="text-[#4a4a4a] text-[0.95rem] leading-[1.85] mb-4">
-                Rev. Adegbola Oladosu is an ordained minister of the Gospel, credentialed with the
+                Rev. Gbola Oladosu is an ordained minister of the Gospel, credentialed with the
                 Rhema Ministerial Association International (Kenneth Hagin Ministries), Nigeria.
                 From his undergraduate years, he has faithfully walked in the Lord's calling, preaching the Word, cultivating prayer, and leading believers into deeper intimacy with the Holy Spirit.
               </p>
@@ -283,7 +285,7 @@ export default function Home() {
       {/* Quote */}
       <TestimonialQuote
         quote="Prayer is not a religious duty. It is the breath of the spirit-filled believer. When you learn to pray, you learn to reign."
-        author="Rev. Adegbola Oladosu"
+        author="Rev. Gbola Oladosu"
       />
 
 

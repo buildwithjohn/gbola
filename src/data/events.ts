@@ -17,6 +17,18 @@ export const events: MinistryEvent[] = [
 
   // ─── UPCOMING ────────────────────────────────────────────────────
   {
+    id: 'prayer-school-rhema',
+    day: '20',
+    month: 'Apr',
+    year: '2099',
+    title: 'Prayer School — Every Sunday',
+    location: 'Rhema Nigeria, Plot 1531, Kaura District, Opp. Suncity Estate, Galadimawa, Abuja',
+    time: 'Every Sunday · 4:00 PM – 5:00 PM',
+    tag: 'Recurring',
+    featured: true,
+    host: 'Rhema Bible Training Center, Nigeria',
+  },
+  {
     id: 'rhema-authority-1',
     day: '14',
     month: 'Apr',

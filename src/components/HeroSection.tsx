@@ -137,7 +137,7 @@ export default function HeroSection() {
           <div className="absolute top-10 right-[-20px] bottom-0 left-10 border border-[#c9a84c]/20 bg-gradient-to-br from-[#c9a84c]/10 to-transparent z-0" />
           <img
             src={portraitImg}
-            alt="Rev. Adegbola Oladosu"
+            alt="Rev. Gbola Oladosu"
             className="relative z-10 w-full h-full object-cover object-top"
             style={{ filter: 'saturate(0.9) contrast(1.05)' }}
           />

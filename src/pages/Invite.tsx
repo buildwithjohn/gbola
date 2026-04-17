@@ -66,7 +66,7 @@ export default function Invite() {
                 Bring a Clear Word to<br />Your Congregation
               </h2>
               <p className="text-[#555] text-sm leading-[1.85] mb-7">
-                Rev. Adegbola Oladosu carries a strong teaching anointing and ministers powerfully
+                Rev. Gbola Oladosu carries a strong teaching anointing and ministers powerfully
                 in prayer and the Holy Spirit. He is available for conferences, revivals, prayer
                 summits, ministers' training, and special services across Nigeria.
               </p>

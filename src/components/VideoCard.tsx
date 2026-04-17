@@ -84,7 +84,7 @@ export default function VideoCard({ video, index = 0 }: VideoCardProps) {
       {/* Card footer */}
       <div className="px-5 py-4 border-t border-white/[0.08]">
         <div className="text-[9px] tracking-[0.22em] uppercase text-[#c9a84c] font-medium mb-1.5">
-          Rev. Adegbola Oladosu
+          Rev. Gbola Oladosu
         </div>
         <h3 className="font-serif text-white font-semibold leading-snug text-[0.95rem] line-clamp-2">
           {title}

@@ -183,7 +183,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-white/08 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/25 text-xs">
-            © {new Date().getFullYear()} Rev. Adegbola Oladosu Ministry. All rights reserved.
+            © {new Date().getFullYear()} Rev. Gbola Oladosu Ministry. All rights reserved.
           </p>
           <p className="text-white/20 text-xs">Abuja, Nigeria · Rhema Ministerial Association International</p>
         </div>

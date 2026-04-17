@@ -57,7 +57,7 @@ export default function Videos() {
             className="flex flex-wrap items-center gap-5"
           >
             <p className="text-white/55 text-base max-w-xl leading-[1.75]">
-              Watch Rev. Adegbola Oladosu minister the Word on prayer, the Holy Spirit, faith, and intimacy with God.
+              Watch Rev. Gbola Oladosu minister the Word on prayer, the Holy Spirit, faith, and intimacy with God.
             </p>
             <a
               href={YOUTUBE_CHANNEL_URL}
@@ -99,7 +99,7 @@ export default function Videos() {
                     {featuredTitle}
                   </h2>
                   <p className="text-[#c9a84c] text-[11px] tracking-[0.18em] uppercase font-medium mt-1">
-                    Rev. Adegbola Oladosu
+                    Rev. Gbola Oladosu
                   </p>
                 </div>
                 <a

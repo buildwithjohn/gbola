@@ -6,6 +6,7 @@ import EventCard from '@/components/EventCard'
 import { events } from '@/data/events'
 import { splitEvents, relativeLabel, isEventPast } from '@/lib/eventUtils'
 import prayerConferenceFlyer from '@/assets/prayer-conference-flyer.jpg'
+import prayerSchoolFlyer from '@/assets/prayer-school-flyer.png'
 import authorityBelieversFlyer from '@/assets/authority-believer-flyer.jpg'
 import rmaiGroup from '@/assets/past-flyers/rmai-faithful-able-group.jpg'
 import lapUntangled from '@/assets/past-flyers/lap-untangled-2024.jpg'
@@ -19,6 +20,7 @@ import agnesAgada from '@/assets/past-flyers/agnes-agada-50th-birthday.jpg'
 import pathlightUpperRoom from '@/assets/past-flyers/pathlight-upper-room-mar25.jpg'
 const flyerMap: Record<string, string> = {
   // Upcoming
+  'prayer-school-rhema': prayerSchoolFlyer,
   'rhema-authority-1': authorityBelieversFlyer,
   'scripture-city-1': prayerConferenceFlyer,
   'scripture-city-2': prayerConferenceFlyer,
@@ -251,7 +253,7 @@ export default function Events() {
             <CalendarCheck size={32} className="text-[#c9a84c] mx-auto mb-4" />
             <h3 className="font-serif text-2xl font-semibold text-white mb-3">Invite Rev. Gbola to Your Church</h3>
             <p className="text-white/50 text-sm leading-[1.75] max-w-md mx-auto mb-7">
-              Would you like Rev. Adegbola Oladosu to minister at your church, conference, or special gathering?
+              Would you like Rev. Gbola Oladosu to minister at your church, conference, or special gathering?
             </p>
             <Link to="/invite"
               className="inline-flex items-center gap-2.5 px-8 py-4 text-[11px] tracking-[0.18em] uppercase font-semibold text-[#0a1628] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(201,168,76,0.3)] transition-all duration-300"

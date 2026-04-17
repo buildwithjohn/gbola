@@ -46,7 +46,7 @@ export default function AudioPlayer({
           <div className="flex-1 min-w-0">
             <div className="text-xs md:text-sm font-medium text-white truncate max-w-[140px] md:max-w-none">{player.title}</div>
             <div className="hidden sm:block text-[11px] text-white/40 mt-0.5 truncate">
-              Rev. Adegbola Oladosu · {player.subtitle}
+              Rev. Gbola Oladosu · {player.subtitle}
             </div>
           </div>
 

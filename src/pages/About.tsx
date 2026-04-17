@@ -33,7 +33,7 @@ export default function About() {
             className="font-serif font-semibold text-white leading-[1.1]"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)' }}
           >
-            About Rev. Adegbola Oladosu
+            About Rev. Gbola Oladosu
           </motion.h1>
         </div>
       </section>
@@ -51,7 +51,7 @@ export default function About() {
               <div className="relative">
                 <img
                   src={portraitImg}
-                  alt="Rev. Adegbola Oladosu"
+                  alt="Rev. Gbola Oladosu"
                   className="w-full aspect-[3/4] object-cover object-top"
                 />
                 <div className="hidden sm:block absolute bottom-[-16px] right-[-16px] w-1/2 h-1/2 border-2 border-[#c9a84c] -z-10" />
@@ -71,7 +71,7 @@ export default function About() {
               </h2>
               <div className="space-y-5 text-[0.95rem] leading-[1.85] text-[#4a4a4a]">
                 <p>
-                  Rev. Adegbola Oladosu, fondly called "Brother Gbola", is an ordained minister
+                  Rev. Gbola Oladosu, fondly called "Brother Gbola", is an ordained minister
                   of the Gospel, credentialed with the Rhema Ministerial Association International
                   (Kenneth Hagin Ministries), Nigeria.
                 </p>
@@ -143,7 +143,7 @@ export default function About() {
                 Together in Ministry
               </h2>
               <p className="text-[#4a4a4a] text-[0.95rem] leading-[1.85] mb-5">
-                Rev. Adegbola Oladosu is married to Mrs. Deborah Oluwadamilola Oladosu, a
+                Rev. Gbola Oladosu is married to Mrs. Deborah Oluwadamilola Oladosu, a
                 gracious partner in life and ministry. Together, they are based in Abuja, Nigeria,
                 faithfully serving the Lord and the Body of Christ.
               </p>
@@ -168,7 +168,7 @@ export default function About() {
             >
               <img
                 src={coupleImg}
-                alt="Rev. Adegbola and Mrs. Deborah Oladosu"
+                alt="Rev. Gbola and Mrs. Deborah Oladosu"
                 className="w-full object-cover rounded-sm shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
               />
               <div className="absolute top-4 left-4 bg-[#0a1628]/80 backdrop-blur-sm px-4 py-2 border-l-2 border-[#c9a84c]">

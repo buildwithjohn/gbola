@@ -39,6 +39,7 @@ export function splitEvents(evts: MinistryEvent[]) {
 
 /** Format a relative label like "In 3 days" or "2 days ago" */
 export function relativeLabel(event: MinistryEvent): string {
+  if (event.id === 'prayer-school-rhema') return 'Every Sunday'
   const now = new Date()
   const end = eventEndDate(event)
   const diffMs = end.getTime() - now.getTime()
